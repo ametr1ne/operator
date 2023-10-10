@@ -1,0 +1,344 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
+
+    <link rel="stylesheet" href="./assets/styles/style.css">
+
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+
+    <script defer src="./assets/scripts/main.js"></script>
+
+    <title>Operator</title>
+</head>
+<body>
+<header class="header">
+    <div class="container">
+        <div class="header-content">
+            <svg class="logo header-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 53" fill="none">
+                <g clip-path="url(#clip0_328_3818)">
+                    <mask id="mask0_328_3818" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0"
+                          width="51"
+                          height="51">
+                        <path d="M14.0778 0.353649C6.30277 0.353649 0 6.65641 0 14.4315V50.9647H36.5581C44.3332 50.9647 50.6359 44.662 50.6359 36.8876V0.353649H14.0778Z"
+                              fill="white"/>
+                    </mask>
+                    <g mask="url(#mask0_328_3818)">
+                        <path d="M14.0778 0.353649C6.30277 0.353649 0 6.65641 0 14.4315V50.9647H36.5581C44.3332 50.9647 50.6359 44.662 50.6359 36.8876V0.353649H14.0778Z"
+                              fill="white"/>
+                    </g>
+                    <mask id="mask1_328_3818" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0"
+                          width="240"
+                          height="52">
+                        <path d="M0 0.309456H240V52H0V0.309456Z" fill="white"/>
+                    </mask>
+                    <g mask="url(#mask1_328_3818)">
+                        <path d="M45.421 34.1107H45.4252V22.5066V16.529H44.9861C41.9271 16.529 39.4472 19.0089 39.4472 22.0679V22.5066V24.0183C37.7201 23.0226 35.7888 22.5215 33.6498 22.5215C31.1466 22.5215 28.9222 23.22 26.9748 24.6105C28.3855 26.1761 29.3893 27.9097 29.9887 29.8108C31.0475 28.9364 32.2715 28.4988 33.6605 28.4988C35.2625 28.4988 36.6372 29.0576 37.7852 30.1757C38.8034 31.2208 39.3562 32.4544 39.4472 33.8758V34.1107H39.4583C39.4598 34.1738 39.4621 34.2369 39.4621 34.3008C39.4621 35.8718 38.9037 37.2313 37.7852 38.3804C36.6372 39.5283 35.2625 40.1029 33.6605 40.1029C32.0895 40.1029 30.7296 39.5283 29.5809 38.3804C28.433 37.2313 27.8584 35.8718 27.8584 34.3008C27.8584 34.2959 27.8584 34.2913 27.8588 34.2863H27.8431C27.8408 31.0402 26.691 28.2689 24.3936 25.9715C22.0939 23.6714 19.3187 22.5215 16.068 22.5215C12.8484 22.5215 10.0885 23.6714 7.78843 25.9715C5.4585 28.2712 4.29297 31.0464 4.29297 34.297C4.29297 37.5167 5.4585 40.2765 7.78843 42.5766C10.0885 44.9065 12.8484 46.0721 16.068 46.0721C18.6596 46.0721 20.9478 45.3288 22.935 43.8477C21.5036 42.2878 20.4877 40.5638 19.8848 38.6768C18.8034 39.6259 17.5354 40.1029 16.0788 40.1029C14.5078 40.1029 13.1479 39.5283 11.9988 38.3804C10.8509 37.2313 10.2767 35.8718 10.2767 34.3008C10.2767 32.6988 10.8509 31.3241 11.9988 30.1757C13.1479 29.0576 14.5078 28.4988 16.0788 28.4988C17.6804 28.4988 19.0555 29.0576 20.2035 30.1757C21.2879 31.2893 21.8445 32.6166 21.877 34.157C21.8766 34.2037 21.8747 34.25 21.8747 34.297C21.8747 37.5167 23.0406 40.2765 25.3705 42.5766C27.6702 44.9065 30.4301 46.0721 33.6498 46.0721C36.9008 46.0721 39.6756 44.9065 41.9757 42.5766C44.2754 40.2765 45.4252 37.5167 45.4252 34.297C45.4252 34.2343 45.4218 34.1731 45.421 34.1107Z"
+                              fill="white"/>
+                        <path d="M45.421 34.1107H45.4252V22.5066V16.529H44.9861C41.9271 16.529 39.4472 19.0089 39.4472 22.0679V22.5066V24.0183C37.7201 23.0226 35.7888 22.5215 33.6498 22.5215C31.1466 22.5215 28.9222 23.22 26.9748 24.6105C28.3855 26.1761 29.3893 27.9097 29.9887 29.8108C31.0475 28.9364 32.2715 28.4988 33.6605 28.4988C35.2625 28.4988 36.6372 29.0576 37.7852 30.1757C38.8034 31.2208 39.3562 32.4544 39.4472 33.8758V34.1107H39.4583C39.4598 34.1738 39.4621 34.2369 39.4621 34.3008C39.4621 35.8718 38.9037 37.2313 37.7852 38.3804C36.6372 39.5283 35.2625 40.1029 33.6605 40.1029C32.0895 40.1029 30.7296 39.5283 29.5809 38.3804C28.433 37.2313 27.8584 35.8718 27.8584 34.3008C27.8584 34.2959 27.8584 34.2913 27.8588 34.2863H27.8431C27.8408 31.0402 26.691 28.2689 24.3936 25.9715C22.0939 23.6714 19.3187 22.5215 16.068 22.5215C12.8484 22.5215 10.0885 23.6714 7.78843 25.9715C5.4585 28.2712 4.29297 31.0464 4.29297 34.297C4.29297 37.5167 5.4585 40.2765 7.78843 42.5766C10.0885 44.9065 12.8484 46.0721 16.068 46.0721C18.6596 46.0721 20.9478 45.3288 22.935 43.8477C21.5036 42.2878 20.4877 40.5638 19.8848 38.6768C18.8034 39.6259 17.5354 40.1029 16.0788 40.1029C14.5078 40.1029 13.1479 39.5283 11.9988 38.3804C10.8509 37.2313 10.2767 35.8718 10.2767 34.3008C10.2767 32.6988 10.8509 31.3241 11.9988 30.1757C13.1479 29.0576 14.5078 28.4988 16.0788 28.4988C17.6804 28.4988 19.0555 29.0576 20.2035 30.1757C21.2879 31.2893 21.8445 32.6166 21.877 34.157C21.8766 34.2037 21.8747 34.25 21.8747 34.297C21.8747 37.5167 23.0406 40.2765 25.3705 42.5766C27.6702 44.9065 30.4301 46.0721 33.6498 46.0721C36.9008 46.0721 39.6756 44.9065 41.9757 42.5766C44.2754 40.2765 45.4252 37.5167 45.4252 34.297C45.4252 34.2343 45.4218 34.1731 45.421 34.1107Z"
+                              fill="#181818"/>
+                        <path d="M163.393 40.0886C161.791 40.0886 160.416 39.5141 159.268 38.3662C158.149 37.2175 157.591 35.8572 157.591 34.2866C157.591 32.6846 158.149 31.3098 159.268 30.1615C160.416 29.0434 161.791 28.4846 163.393 28.4846C164.963 28.4846 166.323 29.0434 167.472 30.1615C168.62 31.3098 169.195 32.6846 169.195 34.2866H169.186V34.6026C169.114 36.0404 168.542 37.2951 167.472 38.3662C166.323 39.5141 164.963 40.0886 163.393 40.0886ZM171.668 25.9714C169.368 23.6717 166.608 22.5218 163.389 22.5218C160.138 22.5218 157.363 23.6717 155.063 25.9714C152.764 28.2715 151.613 31.0463 151.613 34.2969C151.613 37.517 152.764 40.2768 155.063 42.5765C157.363 44.9065 160.138 46.0724 163.389 46.0724C165.978 46.0724 168.269 45.3165 170.264 43.8098C171.272 45.1781 172.895 46.0663 174.725 46.0663H175.164V34.2866C175.162 31.0405 173.996 28.2688 171.668 25.9714Z"
+                              fill="white"/>
+                        <path d="M211.562 38.3662C210.413 39.5141 209.053 40.0886 207.483 40.0886C205.88 40.0886 204.506 39.5141 203.358 38.3662C202.239 37.2175 201.681 35.8572 201.681 34.2866C201.681 32.6842 202.239 31.3098 203.358 30.1615C204.506 29.0434 205.88 28.4846 207.483 28.4846C209.053 28.4846 210.413 29.0434 211.562 30.1615C212.71 31.3098 213.285 32.6842 213.285 34.2866C213.285 35.8572 212.71 37.2175 211.562 38.3662ZM207.479 22.5218C204.228 22.5218 201.453 23.6713 199.153 25.9714C196.853 28.2715 195.703 31.0463 195.703 34.2969C195.703 37.517 196.853 40.2768 199.153 42.5765C201.453 44.9065 204.228 46.0724 207.479 46.0724C210.698 46.0724 213.458 44.9065 215.758 42.5765C218.088 40.2768 219.254 37.517 219.254 34.2969C219.254 31.0463 218.088 28.2715 215.758 25.9714C213.458 23.6713 210.698 22.5218 207.479 22.5218Z"
+                              fill="white"/>
+                        <path d="M97.1571 38.3662C96.0084 39.5141 94.6485 40.0887 93.0775 40.0887C91.4755 40.0887 90.1008 39.5141 88.9528 38.3662C87.8343 37.2175 87.2755 35.8573 87.2755 34.2866C87.2755 32.6843 87.8343 31.3099 88.9528 30.1616C90.1008 29.0434 91.4755 28.4846 93.0775 28.4846C94.6485 28.4846 96.0084 29.0434 97.1571 30.1616C98.305 31.3099 98.8796 32.6843 98.8796 34.2866C98.8796 35.8573 98.305 37.2175 97.1571 38.3662ZM93.0737 22.5219C89.8231 22.5219 87.0483 23.6714 84.7482 25.9714C82.4508 28.2689 81.3013 31.0406 81.2986 34.2866H81.2891V46.0663V52.0443H81.7282C84.7872 52.0443 87.2671 49.5644 87.2671 46.5054V46.0663V44.55C88.9964 45.5625 90.9312 46.0724 93.0737 46.0724C96.2937 46.0724 99.0536 44.9065 101.353 42.5766C103.683 40.2769 104.849 37.517 104.849 34.297C104.849 31.0463 103.683 28.2715 101.353 25.9714C99.0536 23.6714 96.2937 22.5219 93.0737 22.5219Z"
+                              fill="white"/>
+                        <path d="M70.848 38.3805C69.7001 39.5284 68.3253 40.1029 66.7229 40.1029C65.1523 40.1029 63.7924 39.5284 62.6437 38.3805C61.4958 37.2317 60.9212 35.8719 60.9212 34.3009C60.9212 32.6989 61.4958 31.3241 62.6437 30.1762C63.7924 29.0577 65.1523 28.4988 66.7229 28.4988C68.3253 28.4988 69.7001 29.0577 70.848 30.1762C71.9665 31.3241 72.525 32.6989 72.525 34.3009C72.525 35.8719 71.9665 37.2317 70.848 38.3805ZM66.7126 22.522C63.4925 22.522 60.733 23.6715 58.433 25.9715C56.103 28.2716 54.9375 31.0464 54.9375 34.2971C54.9375 37.5171 56.103 40.277 58.433 42.5767C60.733 44.9066 63.4925 46.0721 66.7126 46.0721C69.9632 46.0721 72.7384 44.9066 75.0381 42.5767C77.3382 40.277 78.488 37.5171 78.488 34.2971C78.488 31.0464 77.3382 28.2716 75.0381 25.9715C72.7384 23.6715 69.9632 22.522 66.7126 22.522Z"
+                              fill="white"/>
+                        <path d="M127.701 25.9586C125.405 23.6585 122.652 22.5087 119.438 22.5087C116.194 22.5087 113.425 23.6585 111.13 25.9586C108.835 28.2587 107.688 31.0335 107.688 34.2841C107.688 37.5042 108.835 40.2637 111.13 42.5637C113.424 44.8925 116.192 46.0581 119.434 46.0592V46.0535H125.436V45.6147C125.436 42.5557 122.957 40.0758 119.898 40.0758H119.434C117.838 40.0739 116.469 39.499 115.326 38.3534C114.21 37.2043 113.652 35.8444 113.652 34.2738C113.652 32.6714 114.21 31.297 115.326 30.1487C116.472 29.0306 117.843 28.4718 119.442 28.4718C121.01 28.4718 122.367 29.0306 123.513 30.1487C123.937 30.5741 124.282 31.0304 124.55 31.5177H119.704C118.129 31.5177 116.853 32.7942 116.853 34.3687C116.853 35.9435 118.129 37.2196 119.704 37.2196H128.338C129.912 37.2196 131.189 35.9435 131.189 34.3687C131.189 34.3365 131.185 34.3055 131.184 34.2738H131.189C131.186 31.0274 130.023 28.256 127.701 25.9586Z"
+                              fill="white"/>
+                        <path d="M151.804 22.5066H145.826V22.5219C142.583 22.5261 139.813 23.6756 137.518 25.9715C135.221 28.2685 134.071 31.0402 134.069 34.2863H134.059V46.0663H140.037V34.2863H140.046C140.046 32.6843 140.604 31.3095 141.723 30.1616C142.869 29.045 144.241 28.4865 145.839 28.4846V28.4842H146.265C149.324 28.4842 151.804 26.0048 151.804 22.9454V22.5066Z"
+                              fill="white"/>
+                        <path d="M234.018 22.5068V22.5221C230.77 22.5229 227.996 23.6727 225.697 25.9717C223.4 28.2687 222.25 31.0404 222.247 34.2865H222.238V46.0665H228.216V34.2865H228.224C228.224 32.6845 228.783 31.3097 229.902 30.1618C231.048 29.0452 232.419 28.4867 234.018 28.4848V28.4844H234.457C237.516 28.4844 239.996 26.0049 239.996 22.9456V22.5068H234.018Z"
+                              fill="white"/>
+                        <path d="M190.308 40.1006H189.869C188.291 40.0907 186.934 39.533 185.8 38.4244C184.687 37.2784 184.135 35.9132 184.133 34.3146H184.128V28.4843H189.93V22.5067H184.128V22.5009V22.0675C184.128 19.0085 181.63 16.5287 178.548 16.5287L178.105 16.5229V22.5009V34.4501H178.109C178.143 37.6399 179.363 40.3626 181.622 42.6291C183.903 44.9158 186.651 46.0645 189.869 46.0775V46.0782H195.846V45.6395C195.846 42.5805 193.367 40.1006 190.308 40.1006Z"
+                              fill="white"/>
+                    </g>
+                </g>
+                <defs>
+                    <clipPath id="clip0_328_3818">
+                        <rect width="240" height="51.6905" fill="white" transform="translate(0 0.35376)"/>
+                    </clipPath>
+                </defs>
+            </svg>
+            <div class="header-burger">
+                <span></span>
+            </div>
+            <div class="header-menu">
+                <ul class="header-menu__links">
+                    <li class="header-menu__link">
+                        <a href="#traffics">What we do</a>
+                    </li>
+                    <li class="header-menu__link">
+                        <a href="#how-works">How it works</a>
+                    </li>
+                    <li class="header-menu__link">
+                        <a href="#how-start">How to start</a>
+                    </li>
+                    <li class="header-menu__link">
+                        <a href="#referral">Affiliate Program</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
+<main>
+    <section class="hero">
+        <div class="container">
+            <div class="hero__text">
+                <h1 class="hero__title">Ultimate solution for publishers and affiliate marketers</h1>
+                <p class="hero__desc">Smart links and smart tag traffic monetisation</p>
+                <a class="btn btn_primary hero__btn">Registration</a>
+            </div>
+        </div>
+        <img class="hero-img hero__yuan" src="assets/images/hero/yuan-hero.png" alt="yuan">
+        <img class="hero-img hero__dollar" src="assets/images/hero/hero-dollar.png" alt="dollar">
+        <img class="hero-img hero__chart" src="assets/images/hero/hero-chart.png" alt="chart">
+    </section>
+    <section id="traffics" class="colored-section traffics">
+        <img class="traffics__money-img" src="assets/images/traffics/money-dynamic-gradient.png" alt="money">
+        <div class="container">
+            <h2 class="section-title traffics__title">Monetize your mobile and web&nbsp;traffic and visitors</h2>
+            <div class="traffics-cards">
+                <div class="traffics-cards__col">
+                    <div class="traffics-card">
+                        <img class="traffics-card__icon" src="assets/images/traffics/mobile_traffic.svg" alt="1">
+                        <p class="traffics-card__text">Mobile traffic</p>
+                    </div>
+                    <div class="traffics-card">
+                        <img class="traffics-card__icon" src="assets/images/traffics/users.svg" alt="1">
+                        <p class="traffics-card__text">Social traffic</p>
+                    </div>
+                </div>
+                <div class="traffics-cards__col traffics-cards__col_offset">
+                    <div class="traffics-card">
+                        <img class="traffics-card__icon" src="assets/images/traffics/desktop.svg" alt="1">
+                        <p class="traffics-card__text">Desktop traffic</p>
+                    </div>
+                    <div class="traffics-card">
+                        <img class="traffics-card__icon" src="assets/images/traffics/database.svg" alt="1">
+                        <p class="traffics-card__text">Domain traffic</p>
+                    </div>
+                </div>
+                <div class="traffics-cards__col">
+                    <div class="traffics-card">
+                        <img class="traffics-card__icon" src="assets/images/traffics/android-square.svg" alt="1">
+                        <p class="traffics-card__text">Android apps traffic</p>
+                    </div>
+                    <div class="traffics-card">
+                        <img class="traffics-card__icon" src="assets/images/traffics/chart.svg" alt="1">
+                        <p class="traffics-card__text">ANY TRAFFIC :)</p>
+                    </div>
+                </div>
+            </div>
+            <a class="btn btn_secondary traffics__btn">Get Smart Link</a>
+        </div>
+        <img class="traffics__bg-pattern" src="./assets/images/traffics/traffic-pattern.svg" alt="traffic">
+    </section>
+    <section id="how-works" class="how-works">
+        <img class="how-works__phone-img" src="assets/images/how-works/phone.png" alt="phone">
+        <img class="how-works__laptop-img" src="assets/images/how-works/laptop-chart.png" alt="laptop">
+        <div class="container">
+            <h2 class="section-title how-works__title">How smart tag works?</h2>
+            <div class="how-works-cards">
+                <div class="how-works-card how-works-card_first">
+
+                    <h3 class="how-works-card__title">Smart tag</h3>
+                    <ul class="marked-list how-works-card__list">
+                        <li class="marked-list__item how-works-card__list-item">Deep Analysis Of Ad View</li>
+                        <li class="marked-list__item how-works-card__list-item">Data Saturation</li>
+                        <li class="marked-list__item how-works-card__list-item">AI Sorting and Prediction</li>
+                    </ul>
+                </div>
+                <div class="how-works-card how-works-card_second">
+                    <h3 class="how-works-card__title">User Interacts with <br/>Ad Formats to Max Performance</h3>
+                    <ul class="marked-list how-works-card__list">
+                        <li class="marked-list__item how-works-card__list-item">Direct Customers</li>
+                        <li class="marked-list__item how-works-card__list-item">Exclusive Partnerships</li>
+                        <li class="marked-list__item how-works-card__list-item">In-house Products</li>
+                    </ul>
+                </div>
+                <div class="how-works-card how-works-card_third">
+                    <h3 class="how-works-card__title">Authentic Ad Formats</h3>
+                    <ul class="marked-list how-works-card__list">
+                        <li class="marked-list__item how-works-card__list-item">Smart In-Page</li>
+                        <li class="marked-list__item how-works-card__list-item">Vignettes</li>
+                        <li class="marked-list__item how-works-card__list-item">Push Notifications</li>
+                        <li class="marked-list__item how-works-card__list-item">Popunders</li>
+                    </ul>
+                </div>
+                <div class="how-works-card how-works-card_blue">
+                    <h3 class="how-works-card__title">And How SmartLink Works ?</h3>
+                    <ol class="how-works-card__list">
+                        <li class="how-works-card__list-item">Real Time AI Visitor Analysis</li>
+                        <li class="how-works-card__list-item">Sorting and Prediction</li>
+                        <li class="how-works-card__list-item">Redirect to Advertiser</li>
+                    </ol>
+                </div>
+            </div>
+            <a class="btn btn_primary how-works__btn">Registration</a>
+        </div>
+    </section>
+    <section id="how-start" class="colored-section how-start">
+        <img class="how-start__figures1" src="assets/images/how-start/figures1.svg" alt="figures">
+        <img class="how-start__figures2" src="assets/images/how-start/figures2.svg" alt="figures">
+        <div class="container_thin">
+            <h2 class="section-title how-start__title">How to start?</h2>
+            <div class="how-start-cards">
+                <div class="how-start-cards__row">
+                    <div class="how-start-card">
+                        <img class="how-start-card__icon" src="assets/images/how-start/user-plus.svg" alt="1">
+                        <div class="how-start-card__text">
+                            <h3 class="how-start-card__title">01. Register</h3>
+                            <p class="how-start-card__desc">Create smart sag and add to your website
+                            </p>
+                        </div>
+                    </div>
+                    <div class="how-start-card how-start-card_wide">
+                        <img class="how-start-card__icon" src="assets/images/how-start/link-plus.svg" alt="1">
+                        <div class="how-start-card__text">
+                            <h3 class="how-start-card__title">02. Create link or tag</h3>
+                            <p class="how-start-card__desc">Create smart link to earn with your redirects, buttons and
+                                remnant traffic
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="how-start-cards__row">
+                    <div class="how-start-card">
+                        <img class="how-start-card__icon" src="assets/images/how-start/browser.svg" alt="1">
+                        <div class="how-start-card__text">
+                            <h3 class="how-start-card__title">03. Start</h3>
+                            <p class="how-start-card__desc">Create smart tag and add to your website
+
+                            </p>
+                        </div>
+                    </div>
+                    <div class="how-start-card">
+                        <img class="how-start-card__icon" src="assets/images/how-start/basket.svg" alt="1">
+                        <div class="how-start-card__text">
+                            <h3 class="how-start-card__title">04. Get paid</h3>
+                            <p class="how-start-card__desc">Get paid in 3-4 hours
+                                (with minimum $20).
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p class="how-start__desc">
+                We pay by Paypal, Paxum, Capitalist, USDT and any Crypto, Bank Transfer, Skrill and many more
+            </p>
+            <a class="btn btn_secondary how-start__btn">Get Smart Link</a>
+        </div>
+    </section>
+    <section class="comments">
+        <img class="comments__chat-img" src="assets/images/comments/chat-dynamic-gradient.png" alt="chat">
+        <img class="comments__like-img" src="assets/images/comments/notify-heart-dynamic-gradient.png" alt="like">
+
+        <h2 class="section-title comments__title">Read what our publishers are&nbsp;thinking</h2>
+        <div class="comments-slider">
+            <div class="comments-item">
+                <h4 class="comments-item__title">Sergio</h4>
+                <p class="comments-item__desc">«I work with Adoperator smartlinks for 2 years.
+                    Pretty satisfied with results on my remnant traffic».
+                </p>
+            </div>
+            <div class="comments-item">
+                <h4 class="comments-item__title">Mitchell</h4>
+                <p class="comments-item__desc">«Probably best option as secondary network for my videohosting».
+                </p>
+            </div>
+            <div class="comments-item">
+                <h4 class="comments-item__title">RashidX</h4>
+                <p class="comments-item__desc">«Smart tags are just wow for my blogspot farms!»
+                </p>
+            </div>
+            <div class="comments-item">
+                <h4 class="comments-item__title">Angela</h4>
+                <p class="comments-item__desc">«I earn almost four figures weekly from links under my youtube posts and
+                    half of it from Adoperator. You are the best!»</p>
+            </div>
+            <div class="comments-item">
+                <h4 class="comments-item__title">Wasimjit</h4>
+                <p class="comments-item__desc">«I work with many networks but my heart (and cryptowallet ;;) ) with
+                    girls managers from Adoperator».</p>
+            </div>
+        </div>
+        <div class="comments-controls">
+            <svg class="slider-arrow arrow-prev" xmlns="http://www.w3.org/2000/svg" width="144" height="90"
+                 viewBox="0 0 144 90" fill="none">
+                <rect x="1.5" y="1.5" width="141" height="87" rx="33.0652" stroke="white" stroke-width="3"/>
+                <path d="M85 20L60 45L85 70" stroke="white" stroke-width="5" stroke-linecap="round"/>
+            </svg>
+            <svg class="slider-arrow arrow-next" xmlns="http://www.w3.org/2000/svg" width="144" height="90"
+                 viewBox="0 0 144 90" fill="none">
+                <rect x="-1.5" y="1.5" width="141" height="87" rx="33.0652" transform="matrix(-1 0 0 1 141 0)"
+                      stroke="white" stroke-width="3"/>
+                <path d="M59 20L84 45L59 70" stroke="white" stroke-width="5" stroke-linecap="round"/>
+            </svg>
+        </div>
+    </section>
+    <section id="referral" class="colored-section referral">
+        <img class="referral__figures1" src="assets/images/referral/referral-figures1.svg" alt="1">
+        <img class="referral__figures2" src="assets/images/referral/referral-figures2.svg" alt="1">
+
+        <div class="container">
+            <h2 class="section-title referral__title">Referral program. Tell your friends </h2>
+            <div class="steps">
+                <div class="steps-marks">
+                    <div class="steps-marks__line"></div>
+                    <div class="steps-mark"><img src="assets/images/referral/mark-round.svg" alt="mark"></div>
+                    <div class="steps-mark"><img src="assets/images/referral/mark-round.svg" alt="mark"></div>
+                    <div class="steps-mark"><img src="assets/images/referral/mark-round.svg" alt="mark"></div>
+                    <div class="steps-mark"><img src="assets/images/referral/mark-round.svg" alt="mark"></div>
+                </div>
+                <div class="steps-cards">
+                    <div class="steps-card">
+                        <p>You will get referral % from their income for life</p>
+                    </div>
+                    <div class="steps-card">
+                        <p>Get your <br/>referral link</p>
+                    </div>
+                    <div class="steps-card">
+                        <p>Register as a&nbsp;publisher</p>
+                    </div>
+                    <div class="steps-card">
+                        <p>Refer your friends with traffic</p>
+                    </div>
+                </div>
+            </div>
+            <a class="btn btn_secondary referral__btn">Get Smart Link</a>
+        </div>
+    </section>
+    <section class="pre-footer">
+        <img class="pre-footer__phone" src="assets/images/pre-footer/pre-footer-phone.png" alt="phone">
+        <img class="pre-footer__euro" src="assets/images/pre-footer/euro-dynamic-gradient.png" alt="euro">
+        <img class="pre-footer__dollar" src="assets/images/pre-footer/dollar-dollar-gradient.png" alt="dollar">
+        <h2 class="section-title pre-footer__title">START EARNING NOW <br />WITH ADOPERATOR <br />SMART LINKS AND SMART TAGS</h2>
+        <a class="btn btn_primary pre-footer__btn">Registration</a>
+    </section>
+</main>
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="copyright">
+                <p>Adoperator Media Ltd. Omirou, 10 Limassol 3095, Cyprus
+                </p>
+                <p>© 2018-2023 Ad Operator Inc. All rights reserved</p>
+            </div>
+            <ul class="footer-links">
+                <li class="footer-links__link"><a href="#">Сookie policy</a></li>
+                <li class="footer-links__link"><a href="#">Privacy Policy</a></li>
+                <li class="footer-links__link"><a href="#">Terms Of Use</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,152 @@
+.how-works {
+  padding: vw(120) 0;
+  position: relative;
+
+  &__phone-img {
+    position: absolute;
+    left: vw(-206);
+    top: vw(-428);
+    width: vw(781);
+    object-fit: contain;
+  }
+
+  &__laptop-img {
+    position: absolute;
+    right: 0;
+    bottom: vw(-476);
+    height: auto;
+    width: vw(553);
+    object-fit: contain;
+    z-index: 1;
+  }
+
+  &__title {
+    text-align: center;
+    line-height: vw(61);
+  }
+
+  &-cards {
+    margin-top: vw(125);
+    position: relative;
+  }
+
+  &-card {
+    background: #A100FF;
+    border-radius: vw(20);
+    padding: vw(40) vw(40) 0;
+    width: 100%;
+    height: vw(280);
+    max-width: vw(659);
+    box-sizing: border-box;
+    position: relative;
+
+    &__title {
+      color: #FFF;
+      font-size: vw(40);
+      font-weight: 600;
+      line-height: vw(37);
+      margin-bottom: vw(30);
+    }
+
+    &_first {
+      margin-left: vw(141);
+
+      .how-works-card__title {
+        line-height: vw(37);
+      }
+
+      ul {
+        li {
+          line-height: vw(20.5);
+        }
+      }
+
+      &::after {
+        content: "";
+        display: block;
+        background: url("../images/how-works/line1.svg") no-repeat;
+        background-size: contain;
+        position: absolute;
+        z-index: -1;
+        height: vw(136);
+        width: vw(365);
+        top: vw(-27);
+        right: vw(-250);
+      }
+    }
+    &_second {
+      margin-left: auto;
+      margin-right: vw(146);
+      margin-top: vw(-173);
+
+      .how-works-card__title {
+        line-height: vw(29);
+        font-size: vw(32);
+      }
+
+      ul {
+        li {
+          line-height: vw(15);
+        }
+      }
+
+      &::after {
+        content: "";
+        display: block;
+        background: url("../images/how-works/line2.svg") no-repeat;
+        background-size: contain;
+        position: absolute;
+        z-index: -1;
+        height: vw(216);
+        width: vw(366);
+        bottom: vw(-150);
+        left: vw(-300);
+      }
+    }
+    &_third {
+      margin-top: vw(-47);
+
+      .how-works-card__title {
+        line-height: vw(23);
+        font-size: vw(32);
+      }
+
+      ul {
+        li {
+          line-height: vw(17);
+        }
+      }
+    }
+
+    &_blue {
+      background: #4B26DF;
+      max-width: vw(945);
+      padding-left: vw(60);
+      margin-left: auto;
+      margin-top: vw(-175);
+
+      .how-works-card__title {
+        text-align: center;
+      }
+
+      ol {
+        list-style-position: inside;
+
+        li {
+          color: #FFF;
+          font-size: vw(32);
+          font-weight: 400;
+          line-height: vw(23);
+
+          &:not(:last-child) {
+            margin-bottom: vw(30);
+          }
+        }
+      }
+    }
+  }
+
+  &__btn {
+    margin: vw(50) auto 0;
+  }
+}

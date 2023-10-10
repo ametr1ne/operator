@@ -1,0 +1,73 @@
+.traffics {
+  &__money-img {
+    width:  vw(396);
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  &__title {
+    line-height: vw(77.5);
+    max-width: vw(1250);
+    margin-bottom: vw(106);
+  }
+
+  &-cards {
+    display: flex;
+    gap: vw(40);
+    margin-bottom: vw(50);
+
+    &__col {
+      display: flex;
+      flex-direction: column;
+      row-gap: vw(40);
+      width: 100%;
+
+      &_offset {
+        margin-top: vw(80);
+      }
+    }
+  }
+
+  &-card {
+    border-radius: vw(20);
+    background: #FFF;
+    box-shadow: 16px -2px 67px 0px rgba(217, 213, 233, 0.28);
+    display: flex;
+    column-gap: vw(10);
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: vw(520);
+    height: vw(200);
+
+    &__icon {
+      height: auto;
+      width: 100%;
+      min-width: vw(55);
+      max-width: vw(125);
+    }
+
+    &__text {
+      color: $black;
+      font-size: vw(32);
+      font-weight: 400;
+      line-height: vw(66);
+    }
+  }
+
+  &__btn {
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+  }
+
+  &__bg-pattern {
+    width: vw(1779);
+    object-fit: contain;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}

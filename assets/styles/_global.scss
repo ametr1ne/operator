@@ -1,0 +1,109 @@
+body {
+  background: linear-gradient(0deg, $black 0%, $black 100%);
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  width: 100%;
+  max-width: vw(1740);
+  padding: 0 vw(50);
+  margin: 0 auto;
+
+  &_thin {
+    width: 100%;
+    max-width: vw(1400);
+    padding: 0 vw(20);
+    margin: 0 auto;
+  }
+  
+  @media (max-width: 1024px) {
+    max-width: 100%;
+    padding: 0 30px;
+  }
+}
+
+.colored-section {
+  position: relative;
+  border-radius: vw(110);
+  background: linear-gradient(240deg, #FFAB37 -3.92%, #FF0F3A 123.78%);
+  padding: vw(120) 0;
+  overflow: hidden;
+}
+
+.section-title {
+  color: #FFF;
+  font-size: vw(85);
+  font-weight: 700;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  color: white;
+  text-align: center;
+  font-size: vw(40);
+  font-weight: 600;
+  line-height: normal;
+  height: vw(112);
+  width: vw(400);
+  border-radius: 120px;
+  transition: background .3s ease;
+
+  &_primary {
+    background: linear-gradient(#FFAB37, #FF0F3A);
+
+    &:hover {
+      background: linear-gradient(#FFAB37, #FFAB37);
+    }
+  }
+
+  &_secondary {
+    background: linear-gradient(#181818, #181818);
+
+    &:hover {
+      background: linear-gradient(224deg, #181818 0%, #5B5858 100%);
+    }
+  }
+}
+
+.marked-list {
+  &__item {
+    color: #FFF;
+    font-size: vw(24);
+    font-weight: 400;
+    line-height: normal;
+
+    &:not(:last-child) {
+      margin-bottom: vw(20);
+    }
+
+    &::before {
+      content: "";
+      display: inline-block;
+      background: url("../images/mark.svg") no-repeat;
+      background-size: cover;
+      width: vw(21);
+      height: vw(14);
+      margin-right: vw(10);
+    }
+  }
+}
+
+.slider-arrow {
+  outline: none;
+  cursor: pointer;
+  width: vw(144);
+  height: auto;
+
+  &:hover {
+    rect {
+      stroke: #A100FF;
+    }
+    path {
+      stroke: #A100FF;
+    }
+  }
+}

@@ -1,0 +1,47 @@
+.hero {
+  padding-top: vw(120);
+  position: relative;
+  padding-bottom: vw(324);
+
+  &__text {
+    position: relative;
+    z-index: 2;
+  }
+
+  &__title{
+    font-size: vw(100);
+    font-weight: 700;
+    line-height: vw(97);
+    max-width: 72vw;
+    margin-bottom: vw(50);
+  }
+  &__desc {
+    color: rgba(#fff, .78);
+    font-size: vw(40);
+    font-weight: 500;
+    line-height: vw(36.5);
+    max-width: vw(560);
+    margin-bottom: vw(50);
+  }
+  &-img {
+    position: absolute;
+    object-fit: contain;
+  }
+
+  &__yuan {
+    top: vw(50);
+    right: 0;
+    width: vw(288);
+  }
+  &__dollar {
+    top: vw(576);
+    right: 44.4%;
+    width: vw(540);
+  }
+  &__chart {
+    top: vw(73);
+    right: 0;
+    width: vw(1010);
+    z-index: 3;
+  }
+}

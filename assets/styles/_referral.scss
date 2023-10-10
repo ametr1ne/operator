@@ -1,0 +1,86 @@
+.referral {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+
+  &__figures1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: vw(304);
+  }
+
+  &__figures2 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: vw(383);
+  }
+
+  &__title {
+    max-width: vw(812);
+    text-align: center;
+    line-height: vw(77.5);
+    margin: 0 auto vw(50);
+  }
+
+  .steps {
+    margin-bottom: vw(54);
+
+    &-marks {
+      display: flex;
+      justify-content: space-between;
+      width: 82.7%;
+      margin: 0 auto vw(50);
+      position: relative;
+
+      &__line {
+        position: absolute;
+        height: vw(4);
+        background: white;
+        width: 93%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+
+    &-mark {
+      position: relative;
+
+      img {
+        width: vw(103);
+      }
+    }
+
+    &-cards {
+      display: flex;
+      column-gap: vw(34);
+    }
+
+    &-card {
+      border-radius: vw(20);
+      background: #FFF;
+      box-shadow: -4px 12px 48px 0px rgba(240, 80, 62, 0.65);
+      width: vw(384);
+      height: vw(160);
+      color: $black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      p {
+        text-align: center;
+        max-width: vw(322);
+        font-size: vw(32);
+        font-weight: 600;
+        line-height: vw(31);
+      }
+    }
+  }
+
+  &__btn {
+    margin: 0 auto;
+  }
+}

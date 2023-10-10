@@ -1,0 +1,27 @@
+<svg width="125" height="125" viewBox="0 0 125 125" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Shopping, Ecommerce/basket-checkmark-button">
+<g id="Group">
+<g id="Group_2">
+<path id="Path" d="M63 45L47.3684 60L38 50.9949" stroke="#323232" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Path_2" d="M105 52.5V36.8571C105 25.3388 95.6236 16 84.0588 16H36.9412C25.3764 16 16 25.3388 16 36.8571V68.1429C16 79.6612 25.3764 89 36.9412 89H57.8823" stroke="#323232" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Path_3" d="M76.19 75.7984H110L106.304 94H79.8913L74.6045 68H68" stroke="url(#paint0_linear_406_3139)" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Path_4" d="M103.678 106.323C103.778 106.423 103.778 106.578 103.678 106.678C103.578 106.778 103.423 106.778 103.323 106.678C103.223 106.578 103.223 106.423 103.323 106.323C103.418 106.223 103.583 106.223 103.678 106.323" stroke="url(#paint1_linear_406_3139)" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Path_5" d="M82.6775 106.323C82.7775 106.423 82.7775 106.578 82.6775 106.678C82.5775 106.778 82.4225 106.778 82.3225 106.678C82.2225 106.578 82.2225 106.423 82.3225 106.323C82.4175 106.223 82.5775 106.223 82.6775 106.323" stroke="url(#paint2_linear_406_3139)" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</g>
+</g>
+<defs>
+<linearGradient id="paint0_linear_406_3139" x1="89" y1="68" x2="89" y2="94" gradientUnits="userSpaceOnUse">
+<stop stop-color="#7631A5"/>
+<stop offset="1" stop-color="#E4715D"/>
+</linearGradient>
+<linearGradient id="paint1_linear_406_3139" x1="103.5" y1="104" x2="103.5" y2="109" gradientUnits="userSpaceOnUse">
+<stop stop-color="#7631A5"/>
+<stop offset="1" stop-color="#E4715D"/>
+</linearGradient>
+<linearGradient id="paint2_linear_406_3139" x1="82.5" y1="104" x2="82.5" y2="109" gradientUnits="userSpaceOnUse">
+<stop stop-color="#7631A5"/>
+<stop offset="1" stop-color="#E4715D"/>
+</linearGradient>
+</defs>
+</svg>

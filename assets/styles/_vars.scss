@@ -1,0 +1,6 @@
+$black: #181818;
+$black2: #1C1C24;
+
+@function vw($value, $size: 1920) {
+  @return $value * 100vw / $size ;
+}

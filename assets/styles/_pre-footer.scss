@@ -1,0 +1,36 @@
+.pre-footer {
+  padding: vw(120) 0;
+  position: relative;
+
+  &__phone {
+    position: absolute;
+    top: vw(-293);
+    left: vw(-70);
+    width: vw(358);
+  }
+
+  &__euro {
+    position: absolute;
+    bottom: vw(-10);
+    width: vw(178);
+    left: 0;
+  }
+
+  &__dollar {
+    position: absolute;
+    top: vw(120);
+    width: vw(175);
+    right: 0;
+  }
+
+  &__title {
+    text-transform: uppercase;
+    margin: 0 auto vw(50);
+    text-align: center;
+    line-height: vw(90);
+  }
+
+  &__btn {
+    margin: 0 auto;
+  }
+}
