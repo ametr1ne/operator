@@ -314,6 +314,12 @@
           letter-spacing: -0.54px;
         }
 
+        ul {
+          li {
+            line-height: 0.9rem;
+          }
+        }
+
         &::after {
           display: none;
         }

@@ -193,7 +193,7 @@ main {
     font-size: 14px;
   }
   .marked-list__item::before {
-    margin-top: -2px;
+    margin-top: -1px;
   }
 }
 
@@ -885,6 +885,9 @@ main {
     font-size: 18px;
     line-height: 18px;
     letter-spacing: -0.54px;
+  }
+  .how-works-card_second ul li {
+    line-height: 0.9rem;
   }
   .how-works-card_second::after {
     display: none;
