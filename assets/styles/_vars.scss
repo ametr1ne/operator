@@ -1,6 +1,13 @@
 $black: #181818;
 $black2: #1C1C24;
 
+$media-md: 1250px;
+$media-sm: 767px;
+
+$header-height-lg: 100px;
+$header-height-md: 54px;
+
 @function vw($value, $size: 1920) {
-  @return $value * 100vw / $size ;
+  @return $value * 100vw / $size;
 }
+

@@ -1,0 +1,27 @@
+<svg width="58" height="58" viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Shopping, Ecommerce/basket-checkmark-button">
+<g id="Group">
+<g id="Group_2">
+<path id="Path" d="M28.3253 17.9156L18.9689 27.0241L13.3615 21.5559" stroke="#323232" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Path_2" d="M52.3976 22.4699V13.2685C52.3976 6.49322 46.9827 1 40.3041 1H13.0936C6.41489 1 1 6.49322 1 13.2685V31.6713C1 38.4465 6.41489 43.9398 13.0936 43.9398H25.1871" stroke="#323232" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Path_3" d="M36.9231 36.0665H56.3013L54.183 46.5421H39.0445L36.0144 31.5782H32.229" stroke="url(#paint0_linear_488_413)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Path_4" d="M52.5362 52.9095C52.6143 52.9876 52.6143 53.1086 52.5362 53.1867C52.4581 53.2648 52.3371 53.2648 52.259 53.1867C52.181 53.1086 52.181 52.9876 52.259 52.9095C52.3332 52.8315 52.462 52.8315 52.5362 52.9095" stroke="url(#paint1_linear_488_413)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Path_5" d="M40.8254 52.9095C40.9034 52.9876 40.9034 53.1086 40.8254 53.1867C40.7473 53.2648 40.6263 53.2648 40.5482 53.1867C40.4701 53.1086 40.4701 52.9876 40.5482 52.9095C40.6224 52.8315 40.7473 52.8315 40.8254 52.9095" stroke="url(#paint2_linear_488_413)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</g>
+</g>
+<defs>
+<linearGradient id="paint0_linear_488_413" x1="44.2652" y1="31.5782" x2="44.2652" y2="46.5421" gradientUnits="userSpaceOnUse">
+<stop stop-color="#7631A5"/>
+<stop offset="1" stop-color="#E4715D"/>
+</linearGradient>
+<linearGradient id="paint1_linear_488_413" x1="52.3976" y1="51.0963" x2="52.3976" y2="54.9999" gradientUnits="userSpaceOnUse">
+<stop stop-color="#7631A5"/>
+<stop offset="1" stop-color="#E4715D"/>
+</linearGradient>
+<linearGradient id="paint2_linear_488_413" x1="40.6868" y1="51.0963" x2="40.6868" y2="54.9999" gradientUnits="userSpaceOnUse">
+<stop stop-color="#7631A5"/>
+<stop offset="1" stop-color="#E4715D"/>
+</linearGradient>
+</defs>
+</svg>

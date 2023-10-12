@@ -4,90 +4,220 @@
   &__figures1 {
     position: absolute;
     left: 0;
-    width: vw(359);
-    bottom: vw(-49);
+    width: 213px;
+    top: 0;
   }
 
   &__figures2 {
     position: absolute;
     right: 0;
-    width: vw(206);
-    bottom: vw(252);
+    width: 217px;
+    top: 0;
+  }
+
+  &__laptop {
+    position: absolute;
+    width: 946px;
+    z-index: 1;
+    top: -56px;
+    right: -320px;
+  }
+
+  &__container {
+    padding-left: 100px;
   }
 
   &__title {
-    margin-bottom: vw(100);
+    margin-bottom: 33px;
     text-align: center;
-    line-height: vw(64);
   }
 
   &-cards {
-    margin-bottom: vw(71);
+    margin-bottom: 25px;
     display: flex;
     flex-direction: column;
-    row-gap: vw(40);
-
-    &__row {
-      display: flex;
-      gap: vw(40);
-
-      &:nth-child(2) {
-        margin-left: auto;
-      }
-    }
+    row-gap: 13px;
   }
 
   &-card {
-    padding: vw(30) 0;
-    border-radius: vw(20);
+    padding: 20px;
+    position: relative;
+    border-radius: 12px;
     background: #FFF;
-    box-shadow: 16px -2px 67px 0px rgba(217, 213, 233, 0.28);
     display: flex;
-    width: vw(520);
+    width: 680px;
     color: $black;
-    align-items: center;
-    justify-content: center;
 
     &__icon {
       height: auto;
-      width: vw(125);
-      margin-right: vw(30);
+      width: 58px;
+      margin-right: 13px;
     }
 
     &__title {
-      font-size: vw(32);
+      font-size: 1.4rem;
       font-weight: 600;
-      line-height: vw(23);
-      margin-bottom: vw(20);
+      line-height: 1rem;
+      margin-bottom: 13px;
     }
 
-    &__desc {
-      font-size: vw(20);
-      font-weight: 400;
-      line-height: vw(20);
-      max-width: vw(209);
-    }
+    &__list {
+      &-item {
+        color: $black;
+        line-height: 0.7rem;
+        letter-spacing: -0.16px;
 
-    &_wide {
-      width: vw(660);
+        &:not(:last-child) {
+          margin-bottom: 12px;
+        }
 
-      .how-start-card__desc {
-        max-width: vw(350);
+        &::before {
+          background: url("../images/mark-black.svg") no-repeat;
+        }
       }
+    }
+
+    &_short {
+      width: 500px;
     }
   }
 
   &__desc {
     color: #FFF;
-    text-align: center;
-    font-size: vw(32);
+    font-size: 1.125rem;
     font-weight: 500;
-    line-height: vw(35);
-    max-width: vw(841);
-    margin: 0 auto vw(40);
+    max-width: 507px;
+    margin-bottom: 20px;
   }
 
   &__btn {
     margin: 0 auto;
+    position: relative;
+    z-index: 2;
+  }
+  
+  @media (max-width: $media-md) {
+    &__figures1 {
+      display: none;
+    }
+
+    &__figures2 {
+      width: 143px;
+    }
+
+    &__laptop {
+      position: absolute;
+      width: 506px;
+      z-index: 1;
+      top: 41px;
+      right: -15%;
+    }
+
+    &__container {
+      padding-left: 31px;
+    }
+
+    &__title {
+      margin-bottom: 26px;
+    }
+
+    &-cards {
+      margin-bottom: 11px;
+      row-gap: 11px;
+    }
+
+    &-card {
+      padding: 15px;
+      border-radius: 9px;
+      width: 513px;
+
+      &__icon {
+        width: 42px;
+        margin-right: 10px;
+      }
+
+      &__title {
+        margin-bottom: 10px;
+      }
+
+      &__list {
+        &-item {
+          line-height: 0.9rem;
+
+          &:not(:last-child) {
+            margin-bottom: 9px;
+          }
+        }
+      }
+
+      &_short {
+        width: 373px;
+      }
+    }
+
+    &__desc {
+      max-width: 410px;
+      margin-bottom: 15px;
+    }
+  }
+
+  @media (max-width: $media-sm) {
+    padding-left: 12px;
+    padding-right: 12px;
+
+    &__laptop {
+      display: none;
+    }
+
+    &__container {
+      padding-left: 0
+    }
+
+    &__title {
+      margin-bottom: 19px;
+    }
+
+    &-cards {
+      margin-bottom: 18px;
+      row-gap: 12px;
+    }
+
+    &-card {
+      width: 100%;
+      height: unset;
+      max-height: unset;
+
+      &__icon {
+        display: none;
+      }
+
+      &__title {
+        font-size: 16px;
+        margin-bottom: 12px;
+      }
+
+      &__list {
+        &-item {
+          font-size: 14px;
+          display: flex;
+          line-height: 17px;
+
+          &::before {
+            margin-top: 5px;
+          }
+        }
+      }
+
+      &_short {
+        width: 100%;
+      }
+    }
+
+    &__desc {
+      font-size: 16px;
+      max-width: 100%;
+      text-align: center;
+      margin-bottom: 20px;
+    }
   }
 }

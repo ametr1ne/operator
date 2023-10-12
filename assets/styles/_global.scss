@@ -1,40 +1,80 @@
+html {
+  scroll-padding-top: $header-height-lg;
+  font-size: 16px;
+
+  @media (max-width: $media-md) {
+    scroll-padding-top: $header-height-md;
+    font-size: 10px;
+  }
+
+  @media (max-width: $media-sm) {
+    font-size: 8.25px;
+  }
+}
+
 body {
   background: linear-gradient(0deg, $black 0%, $black 100%);
   color: white;
-  font-family: Arial, sans-serif;
+  font-family: "Graphik", Arial, sans-serif;
+
 }
 
 .container {
   width: 100%;
-  max-width: vw(1740);
-  padding: 0 vw(50);
+  max-width: 1260px;
+  padding: 0 50px;
   margin: 0 auto;
 
   &_thin {
     width: 100%;
-    max-width: vw(1400);
-    padding: 0 vw(20);
+    max-width: 1140px;
+    padding: 0 20px;
     margin: 0 auto;
   }
   
-  @media (max-width: 1024px) {
+  @media (max-width: $media-md) {
     max-width: 100%;
-    padding: 0 30px;
+    padding: 0;
   }
 }
 
 .colored-section {
   position: relative;
-  border-radius: vw(110);
+  border-radius: 65px;
   background: linear-gradient(240deg, #FFAB37 -3.92%, #FF0F3A 123.78%);
-  padding: vw(120) 0;
+  padding: 60px 0;
   overflow: hidden;
+
+  @media (max-width: $media-md) {
+    padding: 34px 0;
+    border-radius: 40px;
+  }
+
+  @media (max-width: $media-sm) {
+    padding: 30px 0;
+    border-radius: 20px;
+  }
+}
+
+main {
+  padding-top: $header-height-lg;
+
+  @media (max-width: 1370px) {
+    overflow-x: hidden;
+  }
+  @media (max-width: $media-md) {
+    padding-top: $header-height-md;
+  }
 }
 
 .section-title {
   color: #FFF;
-  font-size: vw(85);
+  font-size: 3.2rem;
   font-weight: 700;
+
+  @media (max-width: $media-sm) {
+    font-size: 33px;
+  }
 }
 
 .btn {
@@ -44,11 +84,11 @@ body {
   cursor: pointer;
   color: white;
   text-align: center;
-  font-size: vw(40);
+  font-size: 1.6rem;
   font-weight: 600;
   line-height: normal;
-  height: vw(112);
-  width: vw(400);
+  height: 63px;
+  width: 251px;
   border-radius: 120px;
   transition: background .3s ease;
 
@@ -67,17 +107,43 @@ body {
       background: linear-gradient(224deg, #181818 0%, #5B5858 100%);
     }
   }
+
+  &_outline {
+    background: transparent;
+    border: 4px solid white;
+    color: white;
+
+    &:hover {
+      border-color: $black;
+      color: $black;
+    }
+  }
+  
+  @media (max-width: $media-md) {
+    height: 48px;
+    width: 172px;
+
+    &_outline {
+      border-width: 3px;
+    }
+  }
+
+  @media (max-width: $media-sm) {
+    font-size: 19px;
+    width: 100%;
+  }
 }
 
 .marked-list {
   &__item {
     color: #FFF;
-    font-size: vw(24);
+    font-size: 1rem;
     font-weight: 400;
     line-height: normal;
+    display: flex;
 
     &:not(:last-child) {
-      margin-bottom: vw(20);
+      margin-bottom: 16px;
     }
 
     &::before {
@@ -85,9 +151,29 @@ body {
       display: inline-block;
       background: url("../images/mark.svg") no-repeat;
       background-size: cover;
-      width: vw(21);
-      height: vw(14);
-      margin-right: vw(10);
+      width: 10px;
+      height: 6px;
+      margin-right: 7px;
+      margin-top: 1px;
+    }
+  }
+
+  @media (max-width: $media-md) {
+    &__item {
+      &::before {
+        width: 7px;
+        height: 4px;
+        margin-right: 5px;
+      }
+    }
+  }
+  @media (max-width: $media-sm) {
+    &__item {
+      font-size: 14px;
+
+      &::before {
+        margin-top: 0;
+      }
     }
   }
 }
@@ -95,7 +181,7 @@ body {
 .slider-arrow {
   outline: none;
   cursor: pointer;
-  width: vw(144);
+  width: 100px;
   height: auto;
 
   &:hover {
@@ -105,5 +191,9 @@ body {
     path {
       stroke: #A100FF;
     }
+  }
+  
+  @media (max-width: $media-md) {
+    width: 76px;
   }
 }

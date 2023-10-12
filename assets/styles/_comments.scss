@@ -1,58 +1,136 @@
 .comments {
-  padding-top: vw(118);
-  margin-bottom: vw(120);
+  padding-top: 63px;
+  margin: 0 auto 58px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   position: relative;
+  width: 100%;
+  max-width: 1424px;
+  
 
   &__chat-img {
     position: absolute;
-    left: 0;
-    top: vw(60);
-    width: vw(187);
+    right: 0;
+    top: -40px;
+    width: 163px;
   }
   &__like-img {
     position: absolute;
-    right: 0;
-    top: vw(10);
-    width: vw(290);
+    left: 0;
+    top: -120px;
+    width: 330px;
   }
 
   &__title {
-    margin: 0 auto vw(120);
-    max-width: vw(1195);
+    margin: 0 auto 44px;
+    max-width: 721px;
     text-align: center;
-    line-height: vw(77.5);
+    line-height: normal;
   }
 
   &-slider {
     display: flex;
-    column-gap: vw(40);
+    column-gap: 25px;
   }
 
   &-item {
     cursor: grab;
-    padding: vw(50);
-    border-radius: vw(20);
+    padding: 33px;
+    border-radius: 12px;
     background: linear-gradient(0deg, #91BF30 0%, #91BF30 100%), #FFF;
 
     &__title {
-      font-size: vw(40);
+      font-size: 1.375rem;
       font-weight: 500;
-      line-height: vw(29);
-      margin-bottom: vw(30);
+      line-height: 1rem;
+      margin-bottom: 19px;
     }
     &__desc {
-      font-size: vw(28);
+      font-size: 1rem;
       font-weight: 400;
-      line-height: vw(27.3);
+      line-height: normal;
     }
   }
 
   &-controls {
-    margin: vw(50) auto 0;
+    margin: 40px auto 0;
     display: flex;
-    column-gap: vw(30);
+    column-gap: 23px;
+  }
+  
+  @media (max-width: $media-md) {
+    padding-top: 35px;
+    margin: 0 auto 32px;
+    max-width: 100%;
+
+    &__chat-img {
+      top: 10px;
+      width: 112px;
+    }
+    &__like-img {
+      top: -9px;
+      width: 136px;
+    }
+
+    &__title {
+      margin: 0 auto 32px;
+      max-width: 495px;
+    }
+
+    &-slider {
+      column-gap: 20px;
+    }
+
+    &-item {
+      padding: 27px;
+      border-radius:8px;
+
+      &__title {
+        line-height: 1.3rem;
+        margin-bottom: 15px;
+      }
+    }
+
+    &-controls {
+      margin: 30px auto 0;
+      column-gap: 20px;
+    }
+  }
+
+  @media (max-width: $media-sm) {
+    padding-top: 27px;
+    margin: 0 0 30px 10px;
+
+    &__chat-img {
+      display: none;
+    }
+    &__like-img {
+      display: none;
+    }
+
+    &__title {
+      margin: 0 10px 22px 0;
+      max-width: 100%;
+    }
+
+    &-slider {
+      column-gap: 13px;
+    }
+
+    &-item {
+      padding: 20px 18px;
+
+      &__title {
+        font-size: 18px;
+      }
+      &__desc {
+        font-size: 16px;
+      }
+    }
+
+    &-controls {
+      display: none;
+    }
   }
 }

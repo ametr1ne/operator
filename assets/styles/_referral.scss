@@ -3,41 +3,43 @@
   flex-direction: column;
   justify-content: center;
   position: relative;
+  padding-left: 82px;
+  padding-right: 82px;
 
   &__figures1 {
     position: absolute;
     top: 0;
     left: 0;
-    width: vw(304);
+    width: 185px;
   }
 
   &__figures2 {
     position: absolute;
     bottom: 0;
     right: 0;
-    width: vw(383);
+    width: 231px;
   }
 
   &__title {
-    max-width: vw(812);
+    max-width: 491px;
     text-align: center;
-    line-height: vw(77.5);
-    margin: 0 auto vw(50);
+    line-height: normal;
+    margin: 0 auto 33px;
   }
 
   .steps {
-    margin-bottom: vw(54);
+    margin-bottom: 36px;
 
     &-marks {
       display: flex;
       justify-content: space-between;
       width: 82.7%;
-      margin: 0 auto vw(50);
+      margin: 0 auto 31px;
       position: relative;
 
       &__line {
         position: absolute;
-        height: vw(4);
+        height: 2px;
         background: white;
         width: 93%;
         top: 50%;
@@ -50,21 +52,22 @@
       position: relative;
 
       img {
-        width: vw(103);
+        width: 61px;
       }
     }
 
     &-cards {
       display: flex;
-      column-gap: vw(34);
+      column-gap: 22px;
     }
 
     &-card {
-      border-radius: vw(20);
+      border-radius: 13px;
       background: #FFF;
       box-shadow: -4px 12px 48px 0px rgba(240, 80, 62, 0.65);
-      width: vw(384);
-      height: vw(160);
+      min-width: 233px;
+      width: 100%;
+      height: 98px;
       color: $black;
       display: flex;
       justify-content: center;
@@ -72,15 +75,134 @@
 
       p {
         text-align: center;
-        max-width: vw(322);
-        font-size: vw(32);
+        max-width: 185px;
+        font-size: 1.125rem;
         font-weight: 600;
-        line-height: vw(31);
+        //line-height: vw(31);
       }
     }
   }
 
   &__btn {
     margin: 0 auto;
+  }
+
+  @media (max-width: $media-md) {
+    padding-left: 30px;
+    padding-right: 30px;
+
+    &__figures1 {
+      width: 125px;
+    }
+
+    &__figures2 {
+      width: 151px;
+    }
+
+    &__title {
+      max-width: 320px;
+      margin: 0 auto 32px;
+    }
+
+    .steps {
+      margin-bottom: 25px;
+
+      &-marks {
+        margin: 0 auto 9px;
+
+        &__line {
+          height: 1px;
+        }
+      }
+
+      &-mark {
+        img {
+          width: 41px;
+        }
+      }
+
+      &-cards {
+        column-gap: 15px;
+      }
+
+      &-card {
+        border-radius: 8px;
+        min-width: 164px;
+        height: 69px;
+
+        p {
+          text-align: center;
+          max-width: 109px;
+        }
+      }
+    }
+
+    &__btn {
+      margin: 0 auto;
+    }
+  }
+
+  @media (max-width: $media-sm) {
+    padding-left: 13px;
+    padding-right: 13px;
+
+    &__figures1 {
+      display: none;
+    }
+
+    &__figures2 {
+      width: 151px;
+    }
+
+    &__title {
+      max-width: 100%;
+      margin: 0 auto 28px;
+    }
+
+    .steps {
+      margin-bottom: 25px;
+      display: flex;
+      flex-direction: row-reverse;
+      position: relative;
+
+      &-marks {
+        margin: auto 0 auto 18px;
+        flex-direction: column;
+        height: 100%;
+        max-height: 82.7%;
+        width: unset;
+        row-gap: 40px;
+
+        &__line {
+          height: 93%;
+          width: 2px;
+        }
+      }
+
+      &-mark {
+        height: 41px;
+      }
+
+      &-cards {
+        row-gap: 12px;
+        flex-direction: column;
+        width: 100%;
+      }
+
+      &-card {
+        min-width: 235px;
+        width: 100%;
+        max-width: 100%;
+
+        p {
+          font-size: 16px;
+          max-width: 160px;
+        }
+      }
+    }
+
+    &__btn {
+      position: relative;
+    }
   }
 }

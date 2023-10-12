@@ -1,5 +1,5 @@
 .footer {
-  padding: vw(75.5) 0;
+  padding: 46px 0;
   background: $black2;
 
   &-content {
@@ -10,20 +10,58 @@
 
   .copyright {
     color: rgba(#fff, .5);
-    font-size: vw(20);
+    font-size: 0.8rem;
     font-style: normal;
     font-weight: 400;
-    line-height: normal;
+    line-height: 1rem;
   }
 
   &-links {
     display: flex;
-    column-gap: vw(50);
+    column-gap: 31px;
 
     &__link {
-      font-size: vw(20);
+      font-size: 0.8rem;
       font-weight: 400;
       line-height: normal;
+    }
+  }
+  
+  @media (max-width: $media-md) {
+    padding: 30px 27px 24px;
+
+    .copyright {
+      font-size: 1.2rem;
+      line-height: normal;
+    }
+
+    &-links {
+      &__link {
+        font-size: 1.4rem;
+      }
+    }
+  }
+  @media (max-width: $media-sm) {
+    padding: 24px 13px 22px;
+
+    &-content {
+      flex-direction: column-reverse;
+      align-items: flex-start;
+    }
+
+    .copyright {
+      font-size: 13px;
+      line-height: 17px;
+    }
+
+    &-links {
+      flex-direction: column-reverse;
+      row-gap: 20px;
+      margin-bottom: 19px;
+
+      &__link {
+        font-size: 16px;
+      }
     }
   }
 }

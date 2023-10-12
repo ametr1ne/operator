@@ -1,47 +1,136 @@
 .hero {
-  padding-top: vw(120);
   position: relative;
-  padding-bottom: vw(324);
+  padding-bottom: 116px;
+
+  .container {
+    position: relative;
+  }
 
   &__text {
+    padding-top: 70px;
+    padding-left: 38px;
     position: relative;
-    z-index: 2;
+    z-index: 4;
+    max-width: 900px;
   }
 
-  &__title{
-    font-size: vw(100);
+  &__title {
+    font-size: 4rem;
     font-weight: 700;
-    line-height: vw(97);
     max-width: 72vw;
-    margin-bottom: vw(50);
+    margin-bottom: 35px;
   }
+
   &__desc {
     color: rgba(#fff, .78);
-    font-size: vw(40);
+    font-size: 1.6rem;
     font-weight: 500;
-    line-height: vw(36.5);
-    max-width: vw(560);
-    margin-bottom: vw(50);
+    max-width: 363px;
+    margin-bottom: 27px;
   }
+
   &-img {
     position: absolute;
-    object-fit: contain;
+    object-fit: cover;
   }
 
   &__yuan {
-    top: vw(50);
-    right: 0;
-    width: vw(288);
+    top: -20px;
+    right: -60px;
+    width: 185px;
   }
+
   &__dollar {
-    top: vw(576);
+    top: 280px;
     right: 44.4%;
-    width: vw(540);
+    width: 304px;
   }
+
   &__chart {
-    top: vw(73);
+    top: 15px;
     right: 0;
-    width: vw(1010);
+    width: 643px;
     z-index: 3;
+  }
+
+  @media (max-width: $media-md) {
+    padding-bottom: 86px;
+
+    &__title {
+      max-width: 595px;
+      margin-bottom: 24px;
+    }
+    &__desc {
+      max-width: 240px;
+      margin-bottom: 24px;
+    }
+
+    &__text {
+      padding-top: 52px;
+    }
+
+    &__yuan {
+      top: 7px;
+      width: 120px;
+      height: auto;
+      right: 10px;
+    }
+
+    &__dollar {
+      right: 38.4%;
+      top: 206px;
+      width: 230px;
+    }
+
+    &__chart {
+      top: 30px;
+      right: -64px;
+      width: 444px;
+      height: auto;
+    }
+  }
+
+  @media (max-width: $media-sm) {
+    padding-bottom: 30px;
+
+    &__text {
+      padding-left: 12px;
+      padding-right: 12px;
+      padding-top: 226px;
+    }
+
+    &__desc {
+      margin-bottom: 17px;
+      font-size: 22px;
+      max-width: unset;
+      padding-left: 11px;
+    }
+
+    &__title {
+      max-width: unset;
+      padding-left: 11px;
+    }
+
+    &__yuan {
+      top: 10px;
+      width: 66px;
+      height: auto;
+      right: -19px;
+    }
+
+    &__dollar {
+      right: unset;
+      left: -20px;
+      top: 98px;
+      width: 120px;
+    }
+
+    &__chart {
+      width: 311px;
+      right: unset;
+      top: -54px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
   }
 }
