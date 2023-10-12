@@ -11,10 +11,13 @@ let options = {
         320: {
             items: 1,
             fixedWidth: 284,
+            preventScrollOnTouch: "auto",
+            nav: false,
         },
         768: {
             edgePadding: edgePadding,
             items: 1,
+            nav: true,
             fixedWidth: false,
         },
         1024: {
@@ -38,10 +41,13 @@ window.addEventListener("resize", function () {
             320: {
                 items: 1,
                 fixedWidth: 284,
+                preventScrollOnTouch: "auto",
+                nav: false,
             },
             768: {
                 edgePadding: edgePadding,
                 items: 1,
+                nav: true,
                 fixedWidth: false,
             },
             1024: {
